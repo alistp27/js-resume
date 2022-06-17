@@ -1,11 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .main-first{
     display: flex;
-    width: 80vw;
+    width: 40vw;
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -17,26 +18,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 118, 234);
+    background-color: rgb(203, 207, 248);
     border-radius: 10px;
+    box-shadow: 0 5px 10px  #00000049;
 }
 
 .head-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 2rem;
 }
 
 .underline{
-    width: 6rem;
+    width: 11rem;
     height: 5px;
-    background-color: rgb(20, 246, 42);
+    background-color: #7067CF;
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 #user-img{
-    width: 150px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding:1rem;
     
+}
+
+#user-name{
+    text-transform: capitalize;
+}
+
+#job{
+    text-transform: uppercase;
 }
 
 .main-content{
@@ -45,17 +60,21 @@
     align-items: center;
 }
 .main-content h2{
-    padding: 1rem;
+    padding: 0rem 1rem;
+    font-size: 2rem;
 }
 
-.main-content h4{
+.main-content h3{
     padding: 1rem;
-    color: rgb(0, 255, 0);
+    color: #7067CF;
+    font-size: 1.2rem;
+    
 }
 
 .main-content p{
     text-align: center;
     padding: 1rem;
+    font-size: 1rem;
 }
 
 .main-buttons{
@@ -71,7 +90,16 @@
     padding: 1rem;
 }
 #rnd-btn{
-    background-color: darkcyan;
+    background-color: #287D6D;
     padding: 1rem;
     border-radius: 15px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .main-first{
+        width: 70vw;
+    }
 }
