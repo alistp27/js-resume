@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.header{
+    background: url('./BlackForest-Germany-GettyImages-147180370.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    display: flex;
+    color: white;
+    background-color: #8A9B68;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: max-content;
+    padding: 4rem 0;
+    border-radius: 10px;
+}
+
+.modal-btn{
+    padding: 1rem;
+    background-color: #2176FF;
+    margin-top: 1.5rem;
+    font-size: large;
+    border-radius: 10px;
+} 
+
+.modal-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(255 101 0 / 38%);
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    z-index: -10;
+}
+.modal-show{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+.modal-container{
+    display: flex;
+    background-color: white;
+    padding: 4rem;
+    width: 75vw;
+    height: 20vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.close-btn{
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    padding: 10px;
+    border: none;
+    color: red;
+    background: white;
+    font-size: 1.5rem;
+}
