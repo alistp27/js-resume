@@ -108,6 +108,11 @@
         color: #e1d559;
         transition: all 1s ease-in-out;
     }
+    .links > li > a:hover{
+        padding-left: 0.5rem;
+        transition: all 0.5s ease-in-out;
+    }
+    
 }
 
 @media screen and (min-width:800px) {
@@ -130,6 +135,10 @@
     .menu-btn{
         display: none;
 
+    }
+    .links > li > a:hover{
+        color: chartreuse;
+        transition: all 0.5s ease-in-out;
     }
     
 }
