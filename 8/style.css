@@ -1,0 +1,8 @@
+
+.question-text p{
+    display: none;
+}
+
+.open p{
+    display: block;
+}
