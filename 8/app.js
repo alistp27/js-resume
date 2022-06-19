@@ -1,11 +1,17 @@
-const bnts = document.querySelectorAll('.question-btn')
-const questions = document.querySelectorAll('.question')
-console.log(questions)
+let maintext = document.querySelectorAll('.maintext')
 
-questions.forEach(x => {
+
+maintext.forEach(x => {
+    let mainBTN = x.querySelector('.far')
+    console.log(mainBTN)
     x.addEventListener('click',()=>{
-        x.classList.toggle('open')
-        console.log('HI')
+        x.parentElement.classList.toggle('open')
+        if(mainBTN.classList =='far fa-plus-square'){
+            mainBTN.classList = 'far fa-minus-square'
+        }else{
+            mainBTN.classList = 'far fa-plus-square'
+        }
+
     })
     
 });
